@@ -30,6 +30,13 @@ body{
   padding-top: 250px;
 }
 
+.banner-2 {
+  background-image: url(/imgs/banner-fotto-20.jpg);
+  background-position-y: center;
+  background-size: cover;
+  height: 300px;
+}
+
 #testimonials {
   height: 450px;
 }
@@ -49,16 +56,25 @@ body{
 
 .img-thumbnail {
   background-color: #fff4f0;
-  height: 400px;
   overflow: hidden;
+  width: 100%;
 }
 
 .background-olive {
   background-color: #81896a;
 }
 
+.modal-content {
+  background: #fff4f0;
+}
+
 .card {
   background-color: #fff4f0;
+}
+
+.btn {
+  display: block;
+  max-width: fit-content;
 }
 
 .btn:hover {
@@ -79,6 +95,10 @@ svg {
   color: #81896a;
 }
 
+.card-link:hover {
+  color: grey;
+}
+
 .footer {
   background-color: grey;
 }
@@ -94,7 +114,7 @@ svg {
 }
 
 .modal-backdrop {
-    z-index: 1020;
+  z-index: 1020;
 }
 
 @media(max-width: 1200px){
@@ -117,6 +137,11 @@ svg {
   .navbar {
     background-color: #fff4f0;
   }
+
+  .portfolio-banner {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 @media(max-width: 576px){
@@ -131,5 +156,10 @@ svg {
 
   .footer {
     flex-direction: column-reverse;
+  }
+
+  .px-5{
+  padding-left: 1rem!important;
+  padding-right: 1rem!important;
   }
 }
